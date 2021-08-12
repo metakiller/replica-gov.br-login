@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* menu */
+header {
+    height: 9vh;
+    box-shadow: 0 1px 1em gray;
+}
+
+.logo {
+    width: 15vh;
+    height: 6vh;
+    margin-left: 2vh;
+    margin-top: 1vh;
+}
+
+#menu {
+    display: inline;
+    position: absolute;
+    right: 15px;
+    width: 25%;
+    margin-top: 20px;
+}
+
+ul {
+    display: flex;
+    justify-content: space-around;
+    font-size: 15px;
+}
+
+.icones {
+    width: 2.3vh;
+    height: 2.3vh;
+    vertical-align: middle;
+    margin-right: 2vh;
+}
+
+/* Conteúdo principal */
+
+main {
+    width: 160vh;
+    height: 87vh;
+    margin: 4vh auto 0 auto;
+}
+
+button {
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Conteúdo principal - Boas vindas*/
+
+#boas-vindas {
+    width: 80vh;
+    height: 87vh;
+    text-align: center;
+}
+
+#fundo {
+    margin: 2vh 0 0 0;
+}
+
+#mensagem-boas-vindas {
+    /*border: 1px solid yellow;*/
+    width: 59vh;
+    text-align: justify;
+    font-size: 17px;
+    margin: 0 auto;
+}
+
+#botao {
+    width: 47vh;
+    height: 12vh;
+    background-color: rgb(235,235,235);
+    border-radius: 40px/50%;
+    margin: 5vh auto 0 auto;
+    box-shadow: 0 1px 1em grey;
+    cursor: pointer;
+}
+
+#crie-conta {
+    width: 40.5vh;
+    height: 7.5vh;
+    background-color: rgb(36,132,68);
+    border: none;
+    margin: 2vh;
+    border-radius: 50px/50px;
+    font-size: 17px;
+}
+
+/* Conteúdo principal - login */
+
+#login {
+    width: 60vh;
+    position: absolute;
+    right: 22vh;
+    top: 13vh;
+    padding: 3vh;
+    box-shadow: 0 0 0.5em gray;
+    border-radius: 1%;
+}
+
+h2 {
+    font-size: 19px;
+}
+
+h3 {
+    font-size: 17px;
+    margin: 4vh 0;
+    font-weight: normal;
+}
+
+#informacao {
+    font-size: 14px;
+    margin-bottom: 2vh;
+}
+
+label {
+    display: block;
+    margin-bottom: 1vh;
+}
+
+input {
+    display: block;
+    border: 2px solid black;
+    background-color: yellow;
+    height: 5vh;
+    width: 55vh;
+    border-radius: 5px;
+    font-size: 16px;
+    padding: 0 2vh;
+}
+
+#avancar {
+    border: none;
+    background-color: blue;
+    color: white;
+    border-radius: 20%/50%;
+    padding: 2vh;
+    width: 21vh;
+    margin: 5vh 0;
+    font-size: 16px;
+    position: relative;
+    left: 38vh;
+}
