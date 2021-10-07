@@ -5,51 +5,72 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="colors.css">
     <title>gov.br - acesse sua conta</title>
 </head>
 <body>
     <header>
-        <img src="imagens/logo1.png" alt="Gov.br" class="logo">
+        <div id="logo">
+            <img src="./imagens/logo1.png" alt="Gov.br">
+        </div>
         <div id="menu">
             <ul>
-                <li><img src="imagens/icone-contraste.png" alt="Contraste" class="icones">Auto Contraste</li>
-                <li><img src="imagens/icone-libra.png" alt="Libras" class="icones">Vlibras</li>
+                <li><a href=""><img src="/imagens/icone-contraste.png">Alto Contraste</a></li>
+                <li><a href=""><img src="/imagens/icone-libra.png" alt="">VLibras</a></li>
             </ul>
         </div>
     </header>
 
-    <main id="principal">
-        <div id="boas-vindas">
-            <img src="imagens/fundo.PNG" alt="Fundo" id="fundo">
-            <p id="mensagem-boas-vindas">
-                Uma conta garante a identificação de cada
-                cidadão que acessa os serviços digitais do governo.
-            </p>
-            <div id="botao">
-                <button id="crie-conta">Crie sua conta gov.br</button>
+    <main>
+        <div id="principal">
+            <div id="mensagem">
+                <div id="imagem">
+                    <img src="/imagens/fundo.PNG" alt="Bem vindo">
+                </div>
+                <div id="texto">
+                    <p>Uma conta gov.br garante a identificação de cada cidadão que acessa os serviços digitais do governo.</p>
+                </div>
+                <div id="botao-criar-conta">
+                    <button>Crie sua conta gov.br</button>
+                </div>
             </div>
-        </div> <!-- boas vindas -->
+            <div id="login">
 
-        <div id="login">
-            <h2>Acesse sua conta</h2>
-            <h3 style="margin-top: 5vh;">Número do CPF</h3>
-            <p id="informacao">
-                Caso não lembre se possui uma conta,
-                digite o número do seu CPF mesmo assim
-                para verificar.
-            </p>
+                <div id="titulo-login">
+                    <h1>Acesse sua conta com</h1>
+                </div>
+                <div class="opcoes-login">
+                    <h2>Numero do CPF</h2>
+                </div>
+                <div id="texto-login">
+                    <p>
+                        Caso não lembre se possui uma conta, digite o número do seu CPF mesmo assim para verificar.
+                    </p>
+                </div>
 
-            <form action="">
-                <label for="">CPF</label>
-                <input type="text">
-                <button id="avancar">Avançar</button>
-            </form>
+                <form action="">
+                    <div class="inputbox">
+                        <label for="cpf" class="labelInput">CPF</label>
+                        <input type="text" name="cpf" id="cpf" class="inputUser" placeholder="Digite seu CPF" required>
+                    </div>
+                    <div class="botoes-login">
+                        <button id="botao-login-criar-conta">Crie sua conta</button>
+                        <button id="botao-login-avancar">Avançar</button>
+                    </div>
+                </form>
 
-            <div id="linha" style="border-bottom: 1px solid black;"></div>
+                <div id="linha"></div>
 
-            <h3>Bancos Credenciados</h3>
-            <h3>Certificado digital</h3>
-            <h3> Certificado digital em nuvem</h3>
+                <div class="opcoes-login">
+                    <h2>Bancos Credenciados</h2>
+                </div>
+                <div class="opcoes-login">
+                    <h2>Certificados Digitais</h2>
+                </div>
+                <div class="opcoes-login">
+                    <h2>Certificado digital em núvem</h2>
+                </div>
+            </div>
         </div>
     </main>
 </body>
